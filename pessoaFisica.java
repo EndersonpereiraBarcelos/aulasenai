@@ -1,6 +1,6 @@
 public class pessoaFisica {
 
-    class perfilHumano{
+    
 
         String nome;
         String sobrenome;
@@ -68,11 +68,11 @@ public class pessoaFisica {
 
         }
 
-    }
+    
 
     public static void main(String[]args){
 
-        perfilHumano perfil1 = new perfilHumano();
+        pessoaFisica perfil1 = new pessoaFisica();
     }
     
 }
