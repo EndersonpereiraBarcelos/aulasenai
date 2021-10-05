@@ -1,4 +1,4 @@
-public class Carro{
+public class Carro2{
 
 
     String marca;
@@ -96,12 +96,7 @@ public class Carro{
             //this.velocidade = 
         }
     }
- 
-        
 
-    
-
-    
     public static void main(String[]args){
 
         Carro perfilCliente = new Carro();

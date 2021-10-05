@@ -46,9 +46,9 @@ public class Conta {
         Conta Conta1 = new Conta();
         Conta Conta2 = new Conta();
 
-        Conta1.nomeDoTitula = "Karol Donat";
+        Conta1.nomeDoTitula = "Enderson";
         Conta1.depositar(1000.00);
-        Conta2.nomeDoTitula = "Caio Henrique Donat";
+        Conta2.nomeDoTitula = "Ana";
         Conta2.depositar(1000.00);
 
 

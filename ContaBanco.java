@@ -1,4 +1,4 @@
-public class Conta {
+public class ContaBanco {
 
     
 
@@ -6,7 +6,7 @@ public class Conta {
         int numero;
         String agencia;
         double saldo;
-        double dataabertura;
+        String dataabertura;
         double valordepositado;//gabiarra ln:74
 
         void setNome(String nome){
@@ -39,7 +39,7 @@ public class Conta {
 
         }
 
-        void setDataabertura(long dataabertura){
+        void setDataabertura(String dataabertura){
             this.dataabertura = dataabertura;
 
 
@@ -83,7 +83,7 @@ public class Conta {
         
         public static void main(String[]args){
             
-            Conta perfilbanco = new Conta();
+            ContaBanco perfilbanco = new ContaBanco();
             
             perfilbanco.setNome("Enderson");
             perfilbanco.getNome();
@@ -97,7 +97,8 @@ public class Conta {
             perfilbanco.setSaldo(1500);
             perfilbanco.getSaldo();
 
-            perfilbanco.setDataabertura(15.04);
+            perfilbanco.setDataabertura("Maio");
+            perfilbanco.getDataabertura();
             
             
             
