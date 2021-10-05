@@ -1,3 +1,4 @@
+package orientacaoObjeto;
 public class ContaBanco {
 
     
@@ -89,7 +90,7 @@ public class ContaBanco {
             perfilbanco.getNome();
 
             perfilbanco.setNumero(5523);
-            perfilbanco.getNome();
+            perfilbanco.getNumero();;
 
             perfilbanco.setAgencia("picpay");
             perfilbanco.getAgencia();
