@@ -30,26 +30,25 @@ class Aluno2 {
         System.out.println(this.situacao);
     }
 
-    private boolean calculaMedia(double nota1, double nota2, double nota3){
+    private String calculaMedia(double nota1, double nota2, double nota3){
         double media = (nota1 + nota2 + nota3);
 
         if(media >= 6){
-            return true;
+            return " aprovado";
         }else{
-            return false;
+            return "reprovado";
         }
 
     }
     
     void situacao(double nota1, double nota2, double nota3){
-        boolean resultado;
-        resultado = calculaMedia(nota1, nota2, nota3);
-        if(resultado == true){
-            this.situacao = "aprovado";
-        }else{
-            this.situacao = "reprovado";
-        }
+        this.situacao = calculaMedia( nota1,  nota2,  nota3);
 
     } 
+    void getDetalhes(){
+        getNome();
+        getMatricula();
+        getSituacao();
+    }
 
 }
