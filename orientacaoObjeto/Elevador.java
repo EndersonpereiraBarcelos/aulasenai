@@ -1,4 +1,9 @@
 public class Elevador {
+    /*
+    switch case, for, if else
+    perguntar qual o andar o usuario que ir e se elevador ta disponivel;
+    monstar o andar do elevador
+    */
     
     int andarAtual;
     int totalAndaresPredio = 15;
