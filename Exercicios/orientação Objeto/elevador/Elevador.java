@@ -17,12 +17,16 @@ public class Elevador {
         if(this.capacidadeatual < this.capacidademaxima){
         this.capacidadeatual++;
 
+        }else{
+            System.out.println("capacidade maxima");
         }
     }
 
     void sai(){
         if(this.capacidadeatual > 0){
         this.capacidadeatual--;
+    }else{
+        System.out.println("Nao a pessoa para sair");
     }
 
     }
@@ -31,7 +35,9 @@ public class Elevador {
         if(this.andaratual < this.totalAndares){ 
         this.andaratual++;
 
-        }   
+        }else{
+            System.out.println("Ja se encontra no ultimo andar");
+        } 
     }
 
     void desce(){
