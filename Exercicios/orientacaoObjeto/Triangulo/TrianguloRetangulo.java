@@ -1,3 +1,4 @@
+package Exercicios.orientacaoObjeto.Triangulo;
 public class TrianguloRetangulo {
     
     double catetoOposto;

@@ -6,6 +6,7 @@ public class Cliente {
     String sobrenome;
     int cpf;
     String endereco;
+    double saldo = 0.0;
 
     void setAlteraNome(String nome){
         this.nome = nome;
@@ -28,9 +29,9 @@ public class Cliente {
     }
 
     void getNome(){
-        System.out.println("Nome completo: " + this.nome + this.sobrenome);
-
+        System.out.println("Nome Completo: " + this.nome + this.sobrenome);
     }
+
 
     void getCpf(){
         System.out.println("CPF: " + this.cpf);
@@ -39,6 +40,12 @@ public class Cliente {
 
     void getEndereco(){
         System.out.println("Endereço: " + this.endereco);
+
     }
-    
+
+    public void getSaldo(){
+        System.out.println(this.saldo);
+    }
+
+
 }

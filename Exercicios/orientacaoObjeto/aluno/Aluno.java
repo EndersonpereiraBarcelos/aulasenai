@@ -1,4 +1,4 @@
-
+package Exercicios.orientacaoObjeto.aluno;
 public class Aluno {
     public static void main(String[]args){
         Aluno2 perfilAluno = new Aluno2();

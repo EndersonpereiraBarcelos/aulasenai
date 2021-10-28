@@ -1,4 +1,5 @@
-package orientacaoObjeto;
+package Exercicios.orientacaoObjeto.banco;
+
 public class Conta {
 
     int numeroDaConta;

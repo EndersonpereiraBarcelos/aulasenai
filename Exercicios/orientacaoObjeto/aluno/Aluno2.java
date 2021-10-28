@@ -1,3 +1,4 @@
+package Exercicios.orientacaoObjeto.aluno;
 
 class Aluno2 {
 
