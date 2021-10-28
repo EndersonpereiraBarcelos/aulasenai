@@ -1,4 +1,4 @@
-package attAvaliativo;
+package AttAvaliativo;
 
 public class Cliente {
 
@@ -30,16 +30,16 @@ public class Cliente {
     }
 
     void getNome(){
-        System.out.println("Nome: " + this.nome);
-    
+        System.out.println("Nome: " + this.nome + this.sobrenome);
+    //juncão de de nome e sobrenome no getNome
     }   
 
- 
+ /*
     void getSobrenome() {
         System.out.println("Sobrenome: " + this.sobrenome);
     
     }
-
+*/
     void getCpf(){
         System.out.println("CPF: " +this.cpf);
     }
@@ -48,24 +48,14 @@ public class Cliente {
     void  getEndereco(){
         System.out.println("Endereco: " + this.endereco);
     }
- /*
-    public void setDepositar(){
-       this.depositar = depositar;
-    }
-
-   public void getDepositar(){
-       System.out.println(this.depositar);
-   }
-*/
-
+ 
     public void setSaldo(double saldo){
         this.saldo = saldo;
-}
+    }
 
     public void getSaldo(){
-        System.out.println(this.saldo);
-}
+        System.out.println("Saldo: " + this.saldo);
+    }
 
 
 }
-

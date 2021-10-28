@@ -1,37 +1,11 @@
-package attAvaliativo;
+package AttAvaliativo;
 
 public class Conta {
     String ClienteTitular;
     int numero;
     double saldo = 0;
     int tipo;
-    double quantidade;
-   
-
-   
-  
-/*
-    void sacar(Double valorDeSacado){
-        if (this.verificarSaque(valorDeSacado)){
-            this.saldo = this.saldo - valorDeSacado;
-        }
-    }
-
-    boolean verificarSaque(Double valorHaSacar){
-        if (this.saldo >= valorHaSacar){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    void tranferir(Double valorDeSaque, Conta destinatario){
-        if (this.verificarSaque(valorDeSaque)){
-            this.sacar(valorDeSaque);
-        }
-    }
-  */
-
+    
     void setAlteraTitular(String ClienteTitular){
         this.ClienteTitular = ClienteTitular;
     }
@@ -56,26 +30,22 @@ public class Conta {
 
     }
 
-
-
-   
-
 public static void main(String[]args){
-    Cliente perfil1 = new Cliente();
+    Cliente perfilcliente = new Cliente();
 
-  perfil1.setAlteraNome("ana");
-  perfil1.setAlteraSobrenome("alves");
-  perfil1.setAlteraCpf(12345678);
-  perfil1.setalteraEndereco("praca 8");
+    perfilcliente.setAlteraNome("Enderson");
+    perfilcliente.setAlteraSobrenome("Pereira Barcelos");
+    perfilcliente.setAlteraCpf(12345678);
+    perfilcliente.setalteraEndereco("praca 8");
 
-  perfil1.getNome();
-  perfil1.getSobrenome();
-  perfil1.getCpf();
-  perfil1.getEndereco();
+    perfilcliente.getNome();
+   // perfilcliente.getSobrenome();
+    perfilcliente.getCpf();
+    perfilcliente.getEndereco();
 
  
-    perfil1.setSaldo(500);
-    perfil1.getSaldo();
+    perfilcliente.setSaldo(500);
+    perfilcliente.getSaldo();
   
 
     }
