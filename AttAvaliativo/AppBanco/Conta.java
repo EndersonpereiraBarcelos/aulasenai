@@ -62,21 +62,11 @@ public class Conta {
 
 
 public static void main(String[]args){
-    Cliente perfil1 = new Cliente();
+    Cliente perfil1 = new Cliente("Enderson ", "Barcelos", 123456, "praca 8", 500);
 
-  perfil1.setAlteraNome("Ana");
-  perfil1.setAlteraSobrenome(" Alves");
-  perfil1.setAlteraCpf(12345678);
-  perfil1.setalteraEndereco("Praça 8");
+  perfil1.getDadosCliente();
+  perfil1.getDeposito(600);
 
-  perfil1.getNome();
-  perfil1.getCpf();
-  perfil1.getEndereco();
-  perfil1.getdeposito(600);
- 
-   
-    
-    
     }
     
 }
