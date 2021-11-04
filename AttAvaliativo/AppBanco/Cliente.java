@@ -1,5 +1,4 @@
-package attAvaliativo;
-
+package AttAvaliativo.AppBanco;
 public class Cliente {
 
     String nome;
@@ -15,6 +14,7 @@ public class Cliente {
         this.sobrenome = sobrenome;
         this.cpf = cpf;
         this.endereco = endereco;
+        this.saldo = saldo;
 
     }
     void getNome(){

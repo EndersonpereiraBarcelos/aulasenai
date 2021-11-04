@@ -1,4 +1,4 @@
-package attAvaliativo;
+package AttAvaliativo.AppBanco;
 
 public class Conta {
     String ClienteTitular;
@@ -62,7 +62,8 @@ public class Conta {
 
 
 public static void main(String[]args){
-    Cliente perfil1 = new Cliente("Enderson ", "Barcelos", 123456, "praca 8", 500);
+    Cliente perfil1 = new Cliente("Enderson ", "Pereira Barcelos", 123456789, "Vitória", 900);
+    
 
   perfil1.getDadosCliente();
   perfil1.getDeposito(600);
