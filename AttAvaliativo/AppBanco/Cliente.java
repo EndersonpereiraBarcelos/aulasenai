@@ -43,11 +43,9 @@ public class Cliente {
         this.saldo = saldo -= valorSacar;
     }
 
-    public void saldo(double saldo){
+    void saldo(){
         System.out.println("Saldo: "+this.saldo);
-    }
-    public void getsaldo(){
-        System.out.println(this.saldo);
+
     }
    
     public void Deposito(double quantidade){
@@ -64,10 +62,6 @@ public class Cliente {
             System.out.println(this.saldo);
         }
     }
-
-
-
-
 
 
     void DadosCliente(){
