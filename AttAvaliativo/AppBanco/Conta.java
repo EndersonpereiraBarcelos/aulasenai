@@ -1,59 +1,106 @@
 package attAvaliativo;
 
 public class Conta {
+
     String ClienteTitular;
     int numero;
     double saldo = 0;
     int tipo;
-    double Sacar;
+    double transferir;
+    double Deposito;
 
-    public Conta(String ClienteTitular, int numero, double saldo, int tipo ){
+    public Conta(String ClienteTitular, int numero, double saldo  ){
         this.ClienteTitular = ClienteTitular;
         this.numero = numero;
         this.saldo = saldo;
-        this.tipo = tipo;
+        //this.tipo = tipo;
         //this.sacar = sacar;
 
     }
 
-    public void getDadosConta(){
+    public void DadosConta(){
         System.out.println("Nome titular: "+this.ClienteTitular);
-        System.out.println("numero da conta: "+this.numero);
-        System.out.println("Saldo:" + this.saldo);
-        System.out.println("Tipo da conta: " + this.tipo);
-        
+        //System.out.println("numero da conta: "+this.numero);
+        System.out.println("Saldo: " + this.saldo);
+        //System.out.println("Tipo da conta: " + this.tipo);
+
     }
 
-    void getSaldo(){
+    public void getSaldo(){
         System.out.println(this.saldo);
     }
 
     
-    void getTitular(){
+    public void getTitular(){
         System.out.println(this.ClienteTitular);
     }
 
-    void getNumero(){
+    public void getNumero(){
         System.out.println(this.numero);
 
     }
-    
+/*
+    void Contasacar(Double valorDeSacado){
+        if (this.ContaverificarSaque(valorDeSacado)){
+            this.saldo = this.saldo - valorDeSacado;
+        }
+    }
+
+
+    boolean ContaverificarSaque(Double valorHaSacar){
+        if (this.saldo >= valorHaSacar){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    void Contatranferir(Double valorDeSaque, Conta destinatario){
+        if (this.ContaverificarSaque(valorDeSaque)){
+            this.Contasacar(valorDeSaque);
+        }
+    }
+    */
+
+    public void Deposito(double quantidade){
+
+        this.saldo = saldo += quantidade;
+
+    }
+
+    public void transferir(Conta Destino, double valorTransferir){
+        if(valorTransferir <= this.saldo){
+            this.Deposito = Deposito += valorTransferir;
+            System.out.println("Valor transferido");
+        }else{
+            System.out.println("Valor nao transferido");
+        }
+    }
 public static void main(String[]args){
 
-    Cliente Enderson = new Cliente("Enderson ", "Barcelos", "123.456.780-9", "Vitória");
-    Cliente Anna = new Cliente("Anna"," Soares", "123.456.789-0", "Centro");
+    Cliente Enderson = new Cliente("Enderson ", "Barcelos", "123456", "Vitoria");
+    //Cliente George = new Cliente("Geoge ", "silva", "9019090090", "Centro");
+    //Conta Emerson = new Conta("Emerson", 9012, 1000);
+    //Conta Scyhteer = new Conta("Syctheer", 9012, 1000);
+    //Conta wanderson = new Conta("wanderson", 912, 1000);
 
-    Enderson.getDadosCliente();
-    Enderson.Deposito(500);
-    Enderson.Saldo();
-    //Enderson.Sacar(100);
+    Enderson.DadosCliente();
+    //George.DadosCliente();
+    //Emerson.DadosConta();
+    //Scyhteer.DadosConta();  
+
+   //Enderson.transferir(Emerson, 200);
+   //Emerson.transferir(Scyhteer, 500);
+   //Emerson.getSaldo();
+   //Scyhteer.getSaldo();
+
+   //Enderson.sacar(200);
+   Enderson.saldo(400);
+   
+   Enderson.Deposito(600);
     
-    Anna.getDadosCliente();
-    Anna.Deposito(500);
-    Anna.Saldo();
-    //Anna.Sacar(250);
-
-   // Enderson.transfere(Anna, 150);
+   Enderson.getsaldo();
+    
 
     }
     
