@@ -39,28 +39,6 @@ public class Conta {
         System.out.println(this.numero);
 
     }
-/*
-    void Contasacar(Double valorDeSacado){
-        if (this.ContaverificarSaque(valorDeSacado)){
-            this.saldo = this.saldo - valorDeSacado;
-        }
-    }
-
-
-    boolean ContaverificarSaque(Double valorHaSacar){
-        if (this.saldo >= valorHaSacar){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    void Contatranferir(Double valorDeSaque, Conta destinatario){
-        if (this.ContaverificarSaque(valorDeSaque)){
-            this.Contasacar(valorDeSaque);
-        }
-    }
-    */
 
     public void Deposito(double quantidade){
 
