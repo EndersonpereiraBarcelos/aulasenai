@@ -7,7 +7,7 @@ public class Cliente {
     String cpf;
     String endereco;
     double saldo;
-
+    double Deposito;
 
     public Cliente (String nome, String sobrenome, String cpf, String endereco){
 
@@ -15,8 +15,10 @@ public class Cliente {
         this.sobrenome = sobrenome;
         this.cpf = cpf;
         this.endereco = endereco;
+        
 
     }
+    /*
     void Nome(){
 
         System.out.println("Nome Completo : " + this.nome + this.sobrenome);
@@ -34,40 +36,49 @@ public class Cliente {
         System.out.println("Endereco: " + this.endereco);
 
     }
+*/
 
-    void Deposito(double quantidade){
+    public void sacar(double valorSacar){
+
+        this.saldo = saldo -= valorSacar;
+    }
+
+    public void saldo(double saldo){
+        System.out.println("Saldo: "+this.saldo);
+    }
+    public void getsaldo(){
+        System.out.println(this.saldo);
+    }
+   
+    public void Deposito(double quantidade){
 
         this.saldo = saldo += quantidade;
 
     }
-    
-    void Sacar(double quantidade) {
 
-        double	novoSaldo =	this.saldo - quantidade;	
-        this.saldo = novoSaldo;
-        System.out.println("Saldo atual: "+ this.saldo);
-
-    }
-    
-    void Saldo(){
-
-        System.out.println("Saldo: " + this.saldo);
+    public void transferir(Conta Destino, double valorTransferir){
+        if(valorTransferir <= this.saldo){
+            this.Deposito = Deposito += valorTransferir;
+            System.out.println(this.saldo);
+        }else{
+            System.out.println(this.saldo);
+        }
     }
 
-    public void transfere(Conta destino, double valor){
 
-        this.saldo = this.saldo - valor;
-        destino.saldo = destino.saldo + valor;
-    }
 
-    
 
-    void getDadosCliente(){
 
-        System.out.println("Nome Completo : " + this.nome + this.sobrenome);
+
+    void DadosCliente(){
+
+        System.out.println("Nome Completo: " + this.nome + this.sobrenome);
         System.out.println("CPF: " + this.cpf);
         System.out.println("Endereco: " + this.endereco);
+        //System.out.println("Saldo: " + this.saldo);
+        //System.out.println("Valor transferido: "+this.transferir);
        
     }
 
 }
+ 
