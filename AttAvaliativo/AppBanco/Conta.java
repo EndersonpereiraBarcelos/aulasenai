@@ -1,4 +1,5 @@
 package AttAvaliativo.AppBanco;
+import AttAvaliativo.AppBanco.Cliente;
 public class Conta {
 
     String Clientetitular;
@@ -15,7 +16,7 @@ public class Conta {
 
     public void Deposito(double valorDeposito){
 
-        this.saldo = this.saldo + valorDeposito;
+        this.saldo = saldo + valorDeposito;
 
     }
 
@@ -42,7 +43,7 @@ public class Conta {
         
         System.out.println("Titular: " + this.Clientetitular);
         System.out.println("Numero: " + this.numero);
-        System.out.println("Saldo: " + this.saldo);
+        //System.out.println("Saldo: " + this.saldo);
 
 
     }
@@ -51,13 +52,21 @@ public class Conta {
     
   public static void main(String[] args) {
       
-    Cliente Enderson = new Cliente("Enderson ", "Barcelos", "123.456.789.87", "vitória");
+    Cliente PerfilCliente = new Cliente("Enderson ", "Barcelos", "123.456.789.87", "vitória");
 
-    Enderson.dadosCliente();
+    //PerfilCliente.dadosCliente();
 
-    Enderson.alterarNome("Paula ");
-    Enderson.getNome();
-    Enderson.alterarSobrenome("Bissoli");
+    PerfilCliente.alterarNome("Paula ");
+    //PerfilCliente.getNome();
+    PerfilCliente.alterarSobrenome("Bissoli");
+
+    Conta perfilConta = new Conta("José", 459, 500);
+    perfilConta.dadosConta();
+    
+    perfilConta.Deposito(500);
+    perfilConta.getSaldo();
+
+    
     
   }
 }
