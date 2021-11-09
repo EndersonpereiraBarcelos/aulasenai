@@ -2,10 +2,10 @@ package AttAvaliativo.AppBanco;
 
 public class Cliente {
 
-     String nome;
-     String sobrenome;
-     String cpf;
-     String endereço;
+    private String nome;
+    private String sobrenome;
+    private String cpf;
+    private String endereço;
 
     //Contrututor
     public Cliente(String nome, String sobrenome, String cpf, String endereço){
