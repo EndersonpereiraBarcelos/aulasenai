@@ -2,10 +2,10 @@ package AttAvaliativo.AppBanco;
 
 public class Cliente {
 
-    private String nome;
-    private String sobrenome;
-    private String cpf;
-    private String endereço;
+     String nome;
+     String sobrenome;
+     String cpf;
+     String endereço;
 
     //Contrututor
     public Cliente(String nome, String sobrenome, String cpf, String endereço){
@@ -58,7 +58,9 @@ public class Cliente {
         System.out.println("Nome completo " + this.nome + this.sobrenome);
         System.out.println("CPF: " + this.cpf);
         System.out.println("Endereço: " + this.endereço);
-        
+
     }
+
+    
 }
  
