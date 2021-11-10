@@ -1,5 +1,5 @@
 package AttAvaliativo.AppBanco;
-import AttAvaliativo.AppBanco.Cliente;
+
 public class Conta {
 
     String Clientetitular;
