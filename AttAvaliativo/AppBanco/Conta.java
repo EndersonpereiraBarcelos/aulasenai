@@ -20,6 +20,31 @@ public class Conta {
 
     }
 
+    public boolean sacar(double sacaValor){
+        if(verificaSaca(sacaValor)){
+            this.saldo = this.saldo - (sacaValor * contaTaxa());
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    public boolean verificaSaca(double sacaValor){
+        if((sacaValor * contaTaxa()) <= this.saldo){
+            return true;
+
+        }else{
+                
+            return false;
+        }
+
+    }
+
+    public void contaTaxa(){
+
+    }
+
     public void alteraTitular(Cliente titular){
 
     }
@@ -48,25 +73,13 @@ public class Conta {
 
     }
 
-
     
   public static void main(String[] args) {
       
     Cliente PerfilCliente = new Cliente("Enderson ", "Barcelos", "123.456.789.87", "vitória");
 
-    //PerfilCliente.dadosCliente();
+    PerfilCliente.dadosCliente();
 
-    PerfilCliente.alterarNome("Paula ");
-    //PerfilCliente.getNome();
-    PerfilCliente.alterarSobrenome("Bissoli");
-
-    Conta perfilConta = new Conta("José", 459, 500);
-    perfilConta.dadosConta();
-    
-    perfilConta.Deposito(500);
-    perfilConta.getSaldo();
-
-    
     
   }
 }
