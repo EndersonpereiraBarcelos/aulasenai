@@ -7,6 +7,11 @@ public class Conta {
     double saldo;
     int tipo;
 
+    enum tiposcontas {
+        contaCorrente,
+        contaPoupanca;
+    }
+
     public Conta(String Clientetitular, int numero, double saldo){
 
         this.Clientetitular = Clientetitular;
@@ -20,7 +25,7 @@ public class Conta {
 
     }
 
-    public boolean sacar(double sacaValor){
+    public boolean saca(double sacaValor){
         if(verificaSaca(sacaValor)){
             this.saldo = this.saldo - (sacaValor * contaTaxa());
             return true;
@@ -41,8 +46,20 @@ public class Conta {
 
     }
 
-    public void contaTaxa(){
+    public double contaTaxa(){
+        if (this.tipo == tiposcontas.contaPoupanca){
+            return 1.1;
+        }else{
+            return 1.0;
+        }
+    }
 
+    public void alteraTipo(String tipo) {
+        if (tipo.equalsIgnoreCase("cC")){
+            this.tipos = tiposcontas.contaCorrente;
+        }else if(tipo.equalsIgnoreCase("cP")){
+            this.tipo = tiposcontas.contaPoupanca;
+        }
     }
 
     public void alteraTitular(Cliente titular){
@@ -61,6 +78,10 @@ public class Conta {
 
     public void getSaldo(){
         System.out.println(this.saldo);
+    }
+
+     public tiposcontas getTipo() {
+        return tiposcontas;
     }
 
 
