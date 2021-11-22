@@ -41,7 +41,11 @@ public class Cliente {
     //GET
 
     public void getNome(){
-        System.out.println("Nome completo " + this.nome + this.sobrenome);
+        System.out.println("Nome completo " + this.nome);
+
+    }
+    public void getSobrenome(){
+        System.out.println("Sobrenome " + this.sobrenome);
 
     }
 
