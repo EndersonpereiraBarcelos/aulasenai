@@ -1,7 +1,4 @@
-import modelo.Pessoa;
-import modelo.PessoaFisica;
-import modelo.PessoaJuridica;
-
+package modelo;
 public class javaBasico {
 
     public static void main(String[]args) {

@@ -1,7 +1,8 @@
 package modelo.Polifornismo;
 import modelo;
+import abstrata;
 
-public class IPessoa{
+public class IPessoa extends interagir{
 
     private String endereço;
 
