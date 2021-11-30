@@ -1,4 +1,6 @@
-package model;
+package modelo;
+
+import modelo.Polifornismo.IPessoa;
 
 public class Pessoa implements IPessoa {
     

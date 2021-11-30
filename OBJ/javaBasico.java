@@ -1,6 +1,6 @@
-import model.Pessoa;
-import model.PessoaFisica;
-import model.PessoaJuridica;
+import modelo.Pessoa;
+import modelo.PessoaFisica;
+import modelo.PessoaJuridica;
 
 public class javaBasico {
 

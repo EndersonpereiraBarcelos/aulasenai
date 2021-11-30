@@ -1,6 +1,8 @@
-package model;
+package modelo;
 
-public class PessoaFisica extends Pessoa {
+import modelo.Polifornismo.IPessoa;
+
+public class PessoaFisica extends Pessoa implements IPessoa {
     
     private String cpf;
 

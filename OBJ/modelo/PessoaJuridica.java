@@ -1,6 +1,8 @@
-package model;
+package modelo;
 
-public class PessoaJuridica extends Pessoa{
+import modelo.Polifornismo.IPessoa;
+
+public class PessoaJuridica extends Pessoa implements IPessoa{
 
     private String cnpj;
 
