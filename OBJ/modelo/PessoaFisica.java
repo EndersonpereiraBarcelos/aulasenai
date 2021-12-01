@@ -1,6 +1,6 @@
 package modelo;
 
-import modelo.Polifornismo.IPessoa;
+import Polifornismo.IPessoa;
 
 public class PessoaFisica extends Pessoa implements IPessoa {
     

@@ -1,4 +1,4 @@
-package modelo.Polifornismo;
+package Polifornismo;
 import modelo;
 import abstrata;
 
